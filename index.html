@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisyui -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts EB Garamond and Poppins-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+        rel="stylesheet">
+
+
+    <!-- font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <style>
+        .font-EB {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .font-Poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="container max-w-screen-xl mx-auto">
+
+        <!-- navbar section -->
+        <nav class="mt-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown font-Poppins ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Services</a>
+
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Cases</a>
+
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Blog</a>
+
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Contact Us</a>
+
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex font-Poppins ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Cases</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Contact Us </summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-btn-color text-white">Free Consultation </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+
+        <section class="container max-w-screen-xl mx-auto">
+            <div class="relative text-center mt-12">
+                <img class="w-full" src="images/banner.png" alt="">
+                <div class="absolute top-1 lg:top-32 lg:left-80 text-white">
+                    <h1 class="font-EB font-extrabold text-2xl lg:text-7xl mb-2 lg:mb-6">We Provide Effective <br>
+                        Legal Solutions</h1>
+                    <p class="font-Poppins mb-2 lg:mb-8">There are many variations of passages of Lorem Ipsum available,
+                        but the
+                        majority <br>
+                        have suffered alteration in some form, by injected humour.</p>
+
+                    <div class="font-Poppins flex justify-center gap-6">
+                        <input class="lg:w-96 p-3 border-none rounded-lg" type="email"
+                            placeholder="Search your services">
+                        <button class="lg:w-28 btn bg-btn-color border-none rounded-lg text-white">Search</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <!-- section-1 -->
+
+        <section class="container max-w-screen-xl mx-auto">
+            <h2>The Legal Practice Area</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form, by injected humour.</p>
+
+            <!-- section-1 content -->
+            <div>
+
+            <!-- card -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
